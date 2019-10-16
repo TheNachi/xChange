@@ -1,16 +1,31 @@
 PODS:
   - Alamofire (4.8.2)
+  - EVReflection (5.10.1):
+    - EVReflection/Core (= 5.10.1)
+  - EVReflection/Core (5.10.1)
 
 DEPENDENCIES:
   - Alamofire (= 4.8.2)
+  - EVReflection (from `https://github.com/evermeer/EVReflection.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
 
+EXTERNAL SOURCES:
+  EVReflection:
+    :branch: master
+    :git: https://github.com/evermeer/EVReflection.git
+
+CHECKOUT OPTIONS:
+  EVReflection:
+    :commit: 283a9801d7107a34aef29bffd6199939021de5ec
+    :git: https://github.com/evermeer/EVReflection.git
+
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  EVReflection: c3dbeb194823e03074ad336d97973a78bcdfeb56
 
-PODFILE CHECKSUM: 6a1fb12eb1694ec735a23f22a8d8066264a16032
+PODFILE CHECKSUM: a2aa8a5affeb88e7bbe1dd56bf4c512ab250d05d
 
 COCOAPODS: 1.7.5

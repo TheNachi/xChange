@@ -7,6 +7,7 @@ target 'xChange' do
 
   # Pods for xChange
   pod 'Alamofire', '4.8.2'
+  pod 'EVReflection', :git => 'https://github.com/evermeer/EVReflection.git', :branch => 'master'
 
   target 'xChangeTests' do
     inherit! :search_paths

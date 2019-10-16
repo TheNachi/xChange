@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-xChange/Pods-xChange-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework

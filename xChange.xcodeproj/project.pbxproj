@@ -3,22 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		17E98AFD8640BB1B405C3C89 /* Pods_xChangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4300631C52075CB2F09C8574 /* Pods_xChangeUITests.framework */; };
 		2519E0EA6990D7A1914CCADF /* Pods_xChangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDCE432CB79E055E3519EAB /* Pods_xChangeTests.framework */; };
 		338CDB7013EE7F2CDE602ED0 /* Pods_xChange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A40FABA1DA9261142A267A /* Pods_xChange.framework */; };
+		AD7030D823464EAB00A9DB84 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7030D723464EAB00A9DB84 /* BaseViewModel.swift */; };
+		AD7030DA2346528900A9DB84 /* XChangeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7030D92346528900A9DB84 /* XChangeApi.swift */; };
+		AD7030DD234656FC00A9DB84 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7030DC234656FC00A9DB84 /* constants.swift */; };
 		ADAE28CB2346138500FF63C7 /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE28CA2346138500FF63C7 /* BaseApiService.swift */; };
 		ADC191212343D56700024B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191202343D56700024B3A /* AppDelegate.swift */; };
 		ADC191232343D56700024B3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191222343D56700024B3A /* SceneDelegate.swift */; };
-		ADC191252343D56700024B3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191242343D56700024B3A /* MainViewController.swift */; };
+		ADC191252343D56700024B3A /* XChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191242343D56700024B3A /* XChangeViewController.swift */; };
 		ADC191282343D56700024B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC191262343D56700024B3A /* Main.storyboard */; };
 		ADC1912A2343D56700024B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC191292343D56700024B3A /* Assets.xcassets */; };
 		ADC1912D2343D56700024B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC1912B2343D56700024B3A /* LaunchScreen.storyboard */; };
 		ADC191382343D56800024B3A /* xChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191372343D56800024B3A /* xChangeTests.swift */; };
 		ADC191432343D56800024B3A /* xChangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC191422343D56800024B3A /* xChangeUITests.swift */; };
+		ADC6CB87235750C50075BD39 /* XChangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6CB86235750C50075BD39 /* XChangeModel.swift */; };
+		ADC6CB8A235751FD0075BD39 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6CB89235751FD0075BD39 /* String+Extensions.swift */; };
+		ADC6CB8F2357C4040075BD39 /* XChangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6CB8E2357C4040075BD39 /* XChangeViewModel.swift */; };
+		ADC6CB912357C47F0075BD39 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6CB902357C47F0075BD39 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +52,14 @@
 		6C9FDB8F137E4F62DDD7D503 /* Pods-xChangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xChangeUITests.debug.xcconfig"; path = "Target Support Files/Pods-xChangeUITests/Pods-xChangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CDCE432CB79E055E3519EAB /* Pods_xChangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xChangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FF9958C36D00455555ED05 /* Pods-xChangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xChangeTests.debug.xcconfig"; path = "Target Support Files/Pods-xChangeTests/Pods-xChangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD7030D723464EAB00A9DB84 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		AD7030D92346528900A9DB84 /* XChangeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XChangeApi.swift; sourceTree = "<group>"; };
+		AD7030DC234656FC00A9DB84 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		ADAE28CA2346138500FF63C7 /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
 		ADC1911D2343D56700024B3A /* xChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC191202343D56700024B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC191222343D56700024B3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADC191242343D56700024B3A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ADC191242343D56700024B3A /* XChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XChangeViewController.swift; sourceTree = "<group>"; };
 		ADC191272343D56700024B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADC191292343D56700024B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC1912C2343D56700024B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +70,10 @@
 		ADC1913E2343D56800024B3A /* xChangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xChangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC191422343D56800024B3A /* xChangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xChangeUITests.swift; sourceTree = "<group>"; };
 		ADC191442343D56800024B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC6CB86235750C50075BD39 /* XChangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XChangeModel.swift; sourceTree = "<group>"; };
+		ADC6CB89235751FD0075BD39 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		ADC6CB8E2357C4040075BD39 /* XChangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XChangeViewModel.swift; sourceTree = "<group>"; };
+		ADC6CB902357C47F0075BD39 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BB7D6A269A12648EDF5C4C34 /* Pods-xChange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xChange.release.xcconfig"; path = "Target Support Files/Pods-xChange/Pods-xChange.release.xcconfig"; sourceTree = "<group>"; };
 		F5A40FABA1DA9261142A267A /* Pods_xChange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xChange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BF6A2CC65CC6267A6D4703 /* Pods-xChangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xChangeTests.release.xcconfig"; path = "Target Support Files/Pods-xChangeTests/Pods-xChangeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,14 +127,31 @@
 				6C9FDB8F137E4F62DDD7D503 /* Pods-xChangeUITests.debug.xcconfig */,
 				3A59C44AAFEE5AD00A8EB1B6 /* Pods-xChangeUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD7030D623464D1300A9DB84 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD7030D723464EAB00A9DB84 /* BaseViewModel.swift */,
+				ADC6CB8E2357C4040075BD39 /* XChangeViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		AD7030DB234652A500A9DB84 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD7030DC234656FC00A9DB84 /* constants.swift */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		ADAE28C92346133100FF63C7 /* api */ = {
 			isa = PBXGroup;
 			children = (
 				ADAE28CA2346138500FF63C7 /* BaseApiService.swift */,
+				AD7030D92346528900A9DB84 /* XChangeApi.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -150,9 +181,13 @@
 		ADC1911F2343D56700024B3A /* xChange */ = {
 			isa = PBXGroup;
 			children = (
+				ADC6CB8D2357BFB10075BD39 /* controllers */,
+				ADC6CB8C2357BFA40075BD39 /* models */,
+				ADC6CB88235751DC0075BD39 /* extensions */,
 				ADC191202343D56700024B3A /* AppDelegate.swift */,
 				ADC191222343D56700024B3A /* SceneDelegate.swift */,
-				ADC191242343D56700024B3A /* MainViewController.swift */,
+				AD7030DB234652A500A9DB84 /* resources */,
+				AD7030D623464D1300A9DB84 /* viewModels */,
 				ADAE28C92346133100FF63C7 /* api */,
 				ADC191262343D56700024B3A /* Main.storyboard */,
 				ADC191292343D56700024B3A /* Assets.xcassets */,
@@ -178,6 +213,31 @@
 				ADC191442343D56800024B3A /* Info.plist */,
 			);
 			path = xChangeUITests;
+			sourceTree = "<group>";
+		};
+		ADC6CB88235751DC0075BD39 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADC6CB89235751FD0075BD39 /* String+Extensions.swift */,
+				ADC6CB902357C47F0075BD39 /* View+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		ADC6CB8C2357BFA40075BD39 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				ADC6CB86235750C50075BD39 /* XChangeModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		ADC6CB8D2357BFB10075BD39 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADC191242343D56700024B3A /* XChangeViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,10 +461,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC191252343D56700024B3A /* MainViewController.swift in Sources */,
+				ADC191252343D56700024B3A /* XChangeViewController.swift in Sources */,
+				AD7030D823464EAB00A9DB84 /* BaseViewModel.swift in Sources */,
+				ADC6CB912357C47F0075BD39 /* View+Extensions.swift in Sources */,
 				ADAE28CB2346138500FF63C7 /* BaseApiService.swift in Sources */,
+				AD7030DD234656FC00A9DB84 /* constants.swift in Sources */,
+				ADC6CB8A235751FD0075BD39 /* String+Extensions.swift in Sources */,
+				ADC6CB87235750C50075BD39 /* XChangeModel.swift in Sources */,
+				AD7030DA2346528900A9DB84 /* XChangeApi.swift in Sources */,
 				ADC191212343D56700024B3A /* AppDelegate.swift in Sources */,
 				ADC191232343D56700024B3A /* SceneDelegate.swift in Sources */,
+				ADC6CB8F2357C4040075BD39 /* XChangeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
