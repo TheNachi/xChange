@@ -74,6 +74,11 @@
                                                     <constraint firstItem="2xk-Xq-xyf" firstAttribute="leading" secondItem="lZd-bg-5A2" secondAttribute="leadingMargin" id="fJl-IA-3Cc"/>
                                                     <constraint firstAttribute="height" constant="60" id="yCc-fo-A0d"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coq-LN-ZKj">
                                                 <rect key="frame" x="22" y="407" width="370" height="60"/>
@@ -103,13 +108,30 @@
                                                     <constraint firstItem="y8y-Vt-pmO" firstAttribute="leading" secondItem="5oU-aU-EtG" secondAttribute="trailing" constant="20" id="aBw-cI-3yL"/>
                                                     <constraint firstItem="5oU-aU-EtG" firstAttribute="centerY" secondItem="coq-LN-ZKj" secondAttribute="centerY" id="gmq-y5-UEE"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daH-bA-LpP">
+                                            <button opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daH-bA-LpP">
                                                 <rect key="frame" x="22" y="512" width="140" height="60"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="UxZ-PG-gZs"/>
                                                     <constraint firstAttribute="height" constant="60" id="XGd-1x-EQq"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-XB-4Y9">
                                                 <rect key="frame" x="75.5" y="531.5" width="33" height="21"/>
@@ -134,6 +156,20 @@
                                                     <constraint firstAttribute="width" constant="140" id="7hc-vh-T1u"/>
                                                     <constraint firstAttribute="height" constant="60" id="gSl-5D-otg"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onClickSelectCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfM-Gw-LqA"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osO-hb-Lxa">
                                                 <rect key="frame" x="306" y="531.5" width="32" height="21"/>
@@ -169,6 +205,11 @@
                                                 <state key="normal" title="Convert">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mid-market echange rate at 13:38 UTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1o-8K-QMG">
                                                 <rect key="frame" x="49.5" y="713" width="315" height="21"/>
@@ -193,6 +234,13 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="27" id="PlX-Fd-K3G"/>
                                                     <constraint firstAttribute="height" constant="30" id="VVX-lN-Pj7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="direction" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-Lk-blR">
+                                                <rect key="frame" x="190" y="531" width="34" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="YwN-O2-Eas"/>
+                                                    <constraint firstAttribute="width" constant="34" id="ZL9-Vf-2y7"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -220,6 +268,7 @@
                                             <constraint firstItem="y1o-8K-QMG" firstAttribute="top" secondItem="ndb-3r-AqU" secondAttribute="bottom" constant="31" id="R6y-2K-cc8"/>
                                             <constraint firstItem="daH-bA-LpP" firstAttribute="leading" secondItem="lZd-bg-5A2" secondAttribute="leading" id="RFx-8O-nLo"/>
                                             <constraint firstItem="uFE-7n-unH" firstAttribute="centerX" secondItem="p9x-PP-srn" secondAttribute="centerX" id="RNR-jS-aIl"/>
+                                            <constraint firstItem="jqb-Lk-blR" firstAttribute="centerX" secondItem="p9x-PP-srn" secondAttribute="centerX" id="Tc4-Ol-Yrb"/>
                                             <constraint firstItem="KA3-Vo-Uep" firstAttribute="trailing" secondItem="daH-bA-LpP" secondAttribute="trailing" constant="-10" id="U5c-XO-npH"/>
                                             <constraint firstItem="X4z-Eu-9oh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l05-vs-uf8" secondAttribute="trailing" constant="8" symbolic="YES" id="Xnr-c3-Ocp"/>
                                             <constraint firstItem="ks1-1s-4vA" firstAttribute="leading" secondItem="H8m-96-7Qi" secondAttribute="leading" constant="10" id="YVh-xI-WK6"/>
@@ -237,6 +286,7 @@
                                             <constraint firstItem="uFE-7n-unH" firstAttribute="leading" secondItem="y1o-8K-QMG" secondAttribute="leading" constant="0.5" id="rdP-vK-egd"/>
                                             <constraint firstItem="H8m-96-7Qi" firstAttribute="firstBaseline" secondItem="daH-bA-LpP" secondAttribute="firstBaseline" id="re2-Jw-CmL"/>
                                             <constraint firstItem="ndb-3r-AqU" firstAttribute="leading" secondItem="daH-bA-LpP" secondAttribute="leading" id="uB2-Ry-uDq"/>
+                                            <constraint firstItem="jqb-Lk-blR" firstAttribute="centerY" secondItem="daH-bA-LpP" secondAttribute="centerY" id="uzq-k2-LSo"/>
                                             <constraint firstItem="Osj-XB-4Y9" firstAttribute="centerX" secondItem="daH-bA-LpP" secondAttribute="centerX" id="yeu-5e-9vL"/>
                                             <constraint firstItem="3RT-oA-BBc" firstAttribute="leading" secondItem="l05-vs-uf8" secondAttribute="leading" id="zgr-QE-djh"/>
                                         </constraints>
@@ -264,6 +314,8 @@
                     </view>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="currencyButtonImageView" destination="ks1-1s-4vA" id="VOf-un-K6f"/>
+                        <outlet property="currencyButtonNameLabel" destination="osO-hb-Lxa" id="vkv-rn-8cq"/>
                         <outlet property="currencyToBeChangeTextField" destination="5oU-aU-EtG" id="CzS-vD-DBN"/>
                         <outlet property="mainCurrencyTextField" destination="2xk-Xq-xyf" id="gnp-mN-MXt"/>
                     </connections>
@@ -274,6 +326,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="direction" width="60" height="60"/>
         <image name="europeanUnion" width="64" height="48"/>
         <image name="expandArrow" width="50" height="50"/>
         <image name="menuButton" width="100" height="100"/>
