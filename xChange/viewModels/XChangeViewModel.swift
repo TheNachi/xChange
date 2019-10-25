@@ -1,7 +1,7 @@
 import Foundation
 
 class XChangeViewModel: BaseViewModel {
-    private var items = ["this", "that", "which", "just", "gone"]
+    private var items = Constants.currencyCode
 }
 
 extension XChangeViewModel: XChangeVMProtocol {

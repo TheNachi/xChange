@@ -318,6 +318,7 @@
                         <outlet property="currencyButtonNameLabel" destination="osO-hb-Lxa" id="vkv-rn-8cq"/>
                         <outlet property="currencyToBeChangeTextField" destination="5oU-aU-EtG" id="CzS-vD-DBN"/>
                         <outlet property="mainCurrencyTextField" destination="2xk-Xq-xyf" id="gnp-mN-MXt"/>
+                        <outlet property="textFieldCurrencyLabel" destination="y8y-Vt-pmO" id="xt4-6a-7rE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
